@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/widget_background"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/widget_football_scores_green"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBall"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/widget_football_scores_image_height"
+                android:layout_weight="2"
+                android:src="@drawable/ic_ball" />
+
+            <TextView
+                android:id="@+id/textTitleBabar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:layout_marginTop="@dimen/widget_football_scores_text_marginTop"
+                android:gravity="right"
+                android:text="@string/widget_results_title"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imgUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/widget_football_scores_image_height"
+                android:layout_weight="2"
+                android:src="@drawable/ic_action_refresh" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/widget_football_scores_light_black"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLessDate"
+                android:layout_width="@dimen/widget_football_scores_button_width"
+                android:layout_height="@dimen/widget_football_scores_button_height"
+                android:layout_weight="1.20"
+                android:text="@string/widget_button_lessDate"
+                android:textSize="@dimen/widget_football_scores_date_textSize"
+                android:background="@android:color/black"
+                android:src="@drawable/ic_ball" />
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.26"
+                android:layout_marginTop="@dimen/widget_football_scores_text_marginTop"
+                android:layout_marginBottom="@dimen/widget_football_socores_date_marginBottom"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/widget_today_test"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/btnMoreDate"
+                android:layout_width="@dimen/widget_football_scores_button_width"
+                android:layout_height="@dimen/widget_football_scores_button_height"
+                android:layout_weight="1.20"
+                android:background="@android:color/black"
+                android:text="@string/widget_button_moreDate"
+                android:textSize="@dimen/widget_football_scores_date_textSize"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/llprogressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:paddingLeft="@dimen/widget_football_scores_pbar_paddingLeft"
+            android:paddingStart="@dimen/widget_football_scores_pbar_paddingLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+        <TextView
+            android:background="@color/widget_football_scores_pbar_color"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/widget_pbar_loading_data"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/widget_football_scores_pbar_textView_paddingLeft"
+
+            android:layout_below="@id/progressBar"
+
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listFootballWidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/emptyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/widget_empty_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/widget_football_scores_empty_textSize" />
+</LinearLayout>

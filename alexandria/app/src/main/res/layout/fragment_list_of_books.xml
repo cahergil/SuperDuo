@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.jaschke.alexandria.ListOfBooks">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/searchButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/searchbutton_marginTop"
+            android:contentDescription="@string/search"
+            android:src="@drawable/ic_action_search" />
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/search_marginBottom"
+            android:layout_marginLeft="@dimen/search_marginLeft"
+            android:layout_marginRight="@dimen/search_marginRight"
+            android:layout_marginTop="@dimen/search_marginTop"
+            android:layout_toLeftOf="@+id/searchButton"
+            android:layout_toStartOf="@+id/searchButton"
+            android:inputType="text"
+            android:saveEnabled="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listOfBooksEmpty"
+            android:text="@string/no_books_available_in_db"
+            android:textSize="@dimen/emptylist_textSize"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="@dimen/emptylist_marginLeft"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/searchText"/>
+
+        <ListView
+            android:id="@+id/listOfBooks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@id/searchButton"
+            android:layout_below="@+id/searchText"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/searchButton" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

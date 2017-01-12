@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_horizonal_matgin">2dp</dimen>
+    <dimen name="share_button_margin">150dp</dimen>
+    <dimen name="TeamNames">17sp</dimen>
+    <dimen name="Score">30sp</dimen>
+    <dimen name="League">15sp</dimen>
+    <!-- widget sizes. -->
+    <dimen name="navigation_icon_size">70dp</dimen>
+    <dimen name="widget_default_height">110dp</dimen>
+    <dimen name="widget_default_width">250dp</dimen>
+    <dimen name="widget_min_resize_width">180dp</dimen>
+    <!-- connection_activity.xml. -->
+    <dimen name="conn_margin_activity_top">150dp</dimen>
+    <dimen name="conn_padding_bottom">20dp</dimen>
+    <!-- detail_fragment.xml. -->
+    <dimen name="detail_fragment_marginTop">20dp</dimen>
+    <dimen name="detail_fragment_shareb_paddingLeft">120dp</dimen>
+    <dimen name="detail_fragment_shareb_paddingRight">120dp</dimen>
+    <!-- fragment_about.xml. -->
+    <dimen name="fragment_about_text_size">12sp</dimen>
+    <!-- fragment_main.xml. -->
+    <dimen name="fragment_main_divider_height">15sp</dimen>
+    <dimen name="fragment_main_paddingLeft">70dp</dimen>
+    <dimen name="fragment_main_paddingTop">170dp</dimen>
+    <dimen name="fragment_main_textSize">20sp</dimen>
+    <!-- pager_fragment.xml. -->
+    <dimen name="pager_fragment_padding">4dp</dimen>
+    <!-- dimensions for scores_list_item.xml. -->
+    <dimen name="scores_list_item_elevation">4dp</dimen>
+    <dimen name="scores_list_item_paddingTop">5dp</dimen>
+    <dimen name="scores_list_item_image_width">70dp</dimen>
+    <dimen name="scores_list_item_image_height">70dp</dimen>
+    <!-- dimensions for widget_football_scores. -->
+    <dimen name="widget_football_scores_image_height">30dp</dimen>
+    <dimen name="widget_football_scores_text_marginTop">5dp</dimen>
+    <dimen name="widget_football_scores_date_textSize">10sp</dimen>
+    <dimen name="widget_football_scores_button_height">30dp</dimen>
+    <dimen name="widget_football_scores_button_width">30dp</dimen>
+    <dimen name="widget_football_socores_date_marginTop">5dp</dimen>
+    <dimen name="widget_football_socores_date_marginBottom">5dp</dimen>
+    <dimen name="widget_football_scores_pbar_paddingLeft">30dp</dimen>
+    <dimen name="widget_football_scores_pbar_textView_paddingLeft">10dp</dimen>
+    <dimen name="widget_football_scores_empty_textSize">15sp</dimen>
+    <dimen name="widget_row_paddingTop">5dp</dimen>
+    <dimen name="widget_row_image_height">20dp</dimen>
+    <dimen name="widget_row_image_width">20dp</dimen>
+    <dimen name="widget_row_text_paddingLeft">6dp</dimen>
+    <dimen name="widget_row_text_textSize">10sp</dimen>
+
+
+
+</resources>

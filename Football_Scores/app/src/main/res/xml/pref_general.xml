@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:title="League"
+        android:key="@string/pref_league_key"
+        android:defaultValue="@string/pref_league_default"
+        android:entries="@array/pref_league_entries"
+        android:entryValues="@array/pref_league_values">
+
+
+
+    </ListPreference>
+</PreferenceScreen>
